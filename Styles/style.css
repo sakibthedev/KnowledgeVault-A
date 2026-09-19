@@ -147,7 +147,7 @@ img {
 .hero {
   display: grid;
   place-items: center;
-  min-height: 582px;
+  min-height: 675px;
   color: #fff;
   text-align: center;
   background-image: url("../assets/hero-bg.png");
@@ -166,6 +166,22 @@ img {
   font-weight: 700;
   letter-spacing: .12em;
   text-transform: uppercase;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  width: 260px;
+  height: 38px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.hero-eyebrow img {
+  width: 100%;
+  height: auto;
 }
 
 .hero h1 {
@@ -189,6 +205,58 @@ img {
   display: flex;
   justify-content: center;
   gap: 12px;
+}
+
+.hero-actions span {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.banner-link {
+  position: absolute;
+  top: 65.5%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 7.9%;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background .2s ease, border-color .2s ease;
+}
+
+.banner-link-start {
+  left: 35.5%;
+  width: 15.7%;
+  background: #43a16b;
+}
+
+.banner-link-how {
+  left: 52.1%;
+  width: 12.5%;
+  border: 1px solid #fff;
+  background: #24384a;
+}
+
+.banner-link span {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.banner-link-start:hover,
+.banner-link-start:focus-visible {
+  background: #328957;
+}
+
+.banner-link-how:hover,
+.banner-link-how:focus-visible {
+  border-color: #43a16b;
+  background: #314d61;
 }
 
 
