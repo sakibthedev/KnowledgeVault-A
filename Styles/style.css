@@ -25,7 +25,8 @@ img {
 }
 
 .container {
-  width: min(1120px, calc(100% - 48px));
+  width: calc(100% - 48px);
+  max-width: 1120px;
   margin-inline: auto;
 }
 
@@ -81,7 +82,7 @@ img {
 }
 
 .section-heading {
-  max-width: 600px;
+  max-width: 100%;
   margin: 0 auto 53px;
   text-align: center;
 }
@@ -90,7 +91,7 @@ img {
 .brain-copy h2,
 .access h2 {
   margin: 0 0 15px;
-  font: 700 clamp(2rem, 4vw, 2.8rem)/1.15 "DM Sans", sans-serif;
+  font: 700 44px/1.15 "DM Sans", sans-serif;
   letter-spacing: -.035em;
 }
 
@@ -129,7 +130,7 @@ img {
   align-items: center;
   gap: 39px;
   margin-right: 20px;
-  margin-left: auto;
+  margin-left: 0 auto;
   color: #53646c;
   font-size: 14px;
 }
@@ -149,7 +150,9 @@ img {
   min-height: 582px;
   color: #fff;
   text-align: center;
-  background: linear-gradient(rgba(10, 32, 50, .83), rgba(10, 32, 50, .86)), url("../assets/hero-bg.png") center/cover;
+  background-image: url("../assets/hero-bg.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-content {
@@ -167,7 +170,7 @@ img {
 
 .hero h1 {
   margin: 0;
-  font: 700 clamp(2.5rem, 6vw, 4.25rem)/1.08 "DM Sans", sans-serif;
+  font: 700 68px/1.08 "DM Sans", sans-serif;
   letter-spacing: -.04em;
 }
 
@@ -187,6 +190,8 @@ img {
   justify-content: center;
   gap: 12px;
 }
+
+
 
 .feature-grid {
   display: grid;
@@ -242,7 +247,7 @@ img {
   display: grid;
   grid-template-columns: .95fr 1.05fr;
   align-items: center;
-  gap: clamp(50px, 9vw, 120px);
+  gap: 80px;
 }
 
 .brain-art {
@@ -251,7 +256,8 @@ img {
 }
 
 .brain-art img {
-  width: min(460px, 100%);
+  width: 460px;
+  max-width: 100%;
   filter: drop-shadow(0 16px 25px rgba(16, 40, 58, .08));
 }
 
@@ -365,124 +371,4 @@ img {
   padding-top: 22px;
   color: #8fa1a8;
   font-size: 11px;
-}
-
-@media (max-width: 760px) {
-  .container {
-    width: min(100% - 32px, 580px);
-  }
-
-  .site-header {
-    height: auto;
-    padding: 18px 0;
-  }
-
-  .nav {
-    flex-wrap: wrap;
-  }
-
-  .nav-links {
-    order: 3;
-    width: 100%;
-    justify-content: center;
-    gap: 22px;
-    margin: 4px 0 0;
-    font-size: 12px;
-  }
-
-  .nav .button-small {
-    margin-left: auto;
-  }
-
-  .hero {
-    min-height: 520px;
-  }
-
-  .hero-content {
-    padding: 70px 0;
-  }
-
-  .hero-copy {
-    font-size: 14px;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-    align-items: stretch;
-    max-width: 270px;
-    margin: auto;
-  }
-
-  .section {
-    padding-top: 75px;
-    padding-bottom: 75px;
-  }
-
-  .feature-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .brain-layout {
-    grid-template-columns: 1fr;
-    gap: 35px;
-  }
-
-  .brain-copy {
-    text-align: center;
-  }
-
-  .brain-copy h2,
-  .brain-copy > p {
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .check-list {
-    width: fit-content;
-    margin-inline: auto;
-    text-align: left;
-  }
-
-  .access {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .access-card {
-    padding: 50px 20px;
-  }
-
-  .footer-top,
-  .footer-bottom {
-    align-items: flex-start;
-    gap: 22px;
-  }
-
-  .footer-top {
-    flex-direction: column;
-  }
-
-  .footer-right {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    gap: 4px;
-  }
-}
-
-@media (max-width: 420px) {
-  .feature-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .nav-links {
-    gap: 14px;
-  }
-
-  .nav .button-small {
-    padding-inline: 11px;
-  }
 }
