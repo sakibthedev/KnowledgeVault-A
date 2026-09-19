@@ -96,8 +96,7 @@ img {
 }
 
 .section-heading > p:last-child,
-.brain-copy > p,
-.access-card > p {
+.brain-copy > p:not(.eyebrow) {
   margin: 0;
   color: #6e7d86;
   font-size: 15px;
@@ -131,8 +130,8 @@ img {
   gap: 39px;
   margin-right: 20px;
   margin-left: 0 auto;
-  color: #53646c;
-  font-size: 14px;
+  color: #181818;
+  font-size: 16px;
 }
 
 .nav-links a,
@@ -161,10 +160,10 @@ img {
 
 .eyebrow {
   margin: 0 0 16px;
-  color: #36bd79;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: .12em;
+  color: rgb(67, 146, 101);
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: .04em;
   text-transform: uppercase;
 }
 
@@ -274,6 +273,9 @@ img {
   transition: border-color .2s, transform .2s, box-shadow .2s;
 }
 
+
+
+
 .feature-card:hover {
   border-color: #a6ddbf;
   transform: translateY(-5px);
@@ -305,6 +307,7 @@ img {
   color: #6e7d86;
   font-size: 13px;
   line-height: 1.65;
+  text-align: center;
 }
 
 .second-brain {
@@ -333,7 +336,7 @@ img {
   max-width: 510px;
 }
 
-.brain-copy > p {
+.brain-copy > p:not(.eyebrow) {
   max-width: 500px;
   margin-bottom: 24px;
 }
@@ -343,8 +346,9 @@ img {
   gap: 13px;
   margin: 0;
   padding: 0;
-  color: #445a63;
+  color: #000;
   font-size: 14px;
+  font-weight: 500;
   list-style: none;
 }
 
@@ -371,19 +375,28 @@ img {
 }
 
 .access-card h2 {
-  margin-bottom: 12px;
+  margin: 0 0 12px;
+  color: #10283a;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.15;
 }
 
 .access-card > p {
-  max-width: 490px;
+  max-width: 100%;
   margin: 0 auto 24px;
+  color: #6e7d86;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .access-card small {
   display: block;
   margin-top: 16px;
   color: #91a09f;
-  font-size: 11px;
+  font-size: 16px;
+  font-weight: 50;
 }
 
 .site-footer {
